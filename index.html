@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Reyts</title>
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body class="dark-theme">
+    <div class="container-scroller">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <ul class="nav">
+                <a href="index.html" class="nav-link">
+                    <div>
+                        <img class="logoimg" src="images/logoWhite.png">
+                    </div>
+                </a>
+
+                <a class="nav-link" id="exchange" href="">
+                    <button type="button" class="btn btn-inverse-light btn-fw inverse"> <span id="cache"><i class="mdi mdi-cached menu-icon"></i></span> Make an exchange </button>
+                </a>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="mdi mdi-home menu-icon"></i>
+                        <span class="menu-title">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="transaction.html">
+                        <i class="mdi mdi-deskphone menu-icon"></i>
+                        <span class="menu-title">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="" aria-expanded="false" aria-controls="icons">
+                        <i class="mdi mdi-image-filter-vintage menu-icon"></i>
+                        <span class="menu-title">Settings</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <!-- <div class="collapse" id="icons">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Material</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Flag icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Font Awesome</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Simple line icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Themify icons</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <i class="mdi mdi-wallet-giftcard menu-icon"></i>
+                        <span class="menu-title">Invite</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#receipt" aria-expanded="false" aria-controls="icons">
+                        <i class="mdi mdi-deskphone menu-icon"></i>
+                        <span class="menu-title">Receipts</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="receipt">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="successful_receipt.html">Successful</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="failed_receipt.html">Failed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pending_receipt.html">Pending</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item logout">
+                    <a class="nav-link" href="">
+                        <i class="mdi mdi-logout menu-icon"></i>
+                        <span class="menu-title">Log out</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_navbar.html -->
+            <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+                    <button class="navbar-toggler navbar-toggler align-items-center" type="button" data-toggle="minimize">
+              <i class="mdi mdi-menu"></i>
+            </button>
+                    <ul class="navbar-nav navbar-nav-right ml-lg-auto">
+                        <li class="nav-item nav-search border-0 mr-1 mr-md-3 mr-lg-5 d-none d-md-flex">
+                            <form class="nav-link form-inline mt-2 mt-md-0">
+                                <div class="input-group">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                    <i class="mdi mdi-magnify"></i>
+                                  </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search" />
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item nav-search border-0 mr-1 mr-md-3 mr-lg-5 d-none d-md-flex">
+
+                        </li>
+                        <li class="nav-item dropdown dropleft">
+                            <a class="nav_notification" href="#">
+                                <i class="mdi mdi-bell-outline"></i>
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav_notification" href="#">
+                                <i class="mdi mdi-account-circle"></i>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-menu"></span>
+            </button>
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper pb-0">
+                    <div class="page-header mb-5">
+                        <h1><img src="images/Vector.png">Welcome, Adenike</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <p class="card-title mb-0">Recent transactions</p>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="bg-light-variant">
+                                                <tr>
+                                                    <th>Today</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="amount_cad"><span class="dash_amount">Amount</span> <br><span class="dash_price">1,000 CAD</span></td>
+                                                    <td class="trans"><img src="images/green.png"></td>
+                                                    <td class="rate"><span class="dash_amount">Rate</span> <br><span class="dash_price">300 CAD</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="amount_cad"><span class="dash_amount">Amount</span> <br><span class="dash_price">1,000 CAD</span></td>
+                                                    <td class="trans"><img src="images/red.png"></td>
+                                                    <td class="rate"><span class="dash_amount">Rate</span> <br><span class="dash_price">300 CAD</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="amount_cad"><span class="dash_amount">Amount</span> <br><span class="dash_price">1,000 CAD</span></td>
+                                                    <td class="trans"><img src="images/yellow.png"></td>
+                                                    <td class="rate"><span class="dash_amount">Rate</span> <br><span class="dash_price">300 CAD</span></td>
+                                                </tr>
+                                                <tr class="bg-light-variant">
+                                                    <td class="next_trans prev_trans">Yesterday</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="amount_cad"><span class="dash_amount">Amount</span> <br><span class="dash_price">1,000 CAD</span></td>
+                                                    <td class="trans"><img src="images/green.png"></td>
+                                                    <td class="rate"><span class="dash_amount">Rate</span> <br><span class="dash_price">300 CAD</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="amount_cad"><span class="dash_amount">Amount</span> <br><span class="dash_price">1,000 CAD</span></td>
+                                                    <td class="trans"><img src="images/red.png"></td>
+                                                    <td class="rate"><span class="dash_amount">Rate</span> <br><span class="dash_price">300 CAD</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="amount_cad"><span class="dash_amount">Amount</span> <br><span class="dash_price">1,000 CAD</span></td>
+                                                    <td class="trans"><img src="images/yellow.png"></td>
+                                                    <td class="rate"><span class="dash_amount">Rate</span> <br><span class="dash_price">300 CAD</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dash_btn">
+                                <a href="transaction.html"><button type="button" class="btn btn-outline-secondary btn-md">See all </button></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-5">
+                                        <p class="card-title mb-0">Statistics</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 grid-margin stretch-card">
+                                            <div class="card">
+                                                <div class="card-dash">
+                                                    <div class="d-xl-flex align-items-center">
+
+                                                        <div>
+                                                            <h3 class="mb-2">10</h3>
+                                                            <p class="mb-0 d-flex align-items-center">Successful transactions</p>
+
+                                                            <div class="dash_icon">
+                                                                <img src="images/green.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 grid-margin stretch-card">
+                                            <div class="card">
+                                                <div class="card-dash">
+                                                    <div class="d-xl-flex align-items-center">
+                                                        <div>
+                                                            <h3 class="mb-2">5</h3>
+                                                            <p class="mb-0 d-flex align-items-center"> Failed transactions</p>
+
+                                                            <div class="dash_icon">
+                                                                <img src="images/red.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 grid-margin stretch-card">
+                                            <div class="card">
+                                                <div class="card-dash">
+                                                    <div class="d-xl-flex align-items-center">
+                                                        <div>
+                                                            <h3 class="mb-2">20</h3>
+                                                            <p class="mb-0 d-flex align-items-center"> Pending transactions</p>
+
+                                                            <div class="dash_icon">
+                                                                <img src="images/yellow.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 grid-margin stretch-card">
+                                            <div class="card">
+                                                <div class="card-dash">
+                                                    <div class="d-xl-flex align-items-center">
+                                                        <div>
+                                                            <h3 class="mb-2">100</h3>
+                                                            <p class="mb-0 d-flex align-items-center"> Total transactions made</p>
+
+                                                            <div class="dash_icon">
+                                                                <span class="check"><i class="mdi mdi-check-all"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- page-body-wrapper ends -->
+            </div>
+            <!-- container-scroller -->
+            <!-- plugins:js -->
+            <script src="js/vendor.bundle.base.js"></script>
+            <script src="js/off-canvas.js"></script>
+            <script src="js/dashboard.js"></script>
+            <!-- endinject -->
+            <!-- Plugin js for this page
+            <script src="../assets/vendors/chart.js/Chart.min.js"></script>
+            <script src="../assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+            <script src="../assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+            <script src="../assets/vendors/chartist/chartist.min.js"></script>
+            <script src="../assets/vendors/flot/jquery.flot.js"></script>
+            <script src="../assets/vendors/flot/jquery.flot.resize.js"></script>
+            <script src="../assets/vendors/flot/jquery.flot.categories.js"></script>
+            <script src="../assets/vendors/flot/jquery.flot.fillbetween.js"></script>
+            <script src="../assets/vendors/flot/jquery.flot.stack.js"></script> -->
+            <!-- End plugin js for this page -->
+            <!-- inject:js -->
+
+            <!--<script src="../assets/js/hoverable-collapse.js"></script>
+            <script src="../assets/js/misc.js"></script>
+            <script src="../assets/js/settings.js"></script>
+            <script src="../assets/js/todolist.js"></script>
+             endinject -->
+            <!-- Custom js for this page -->
+            <!-- End custom js for this page -->
+</body>
+
+
+</html>

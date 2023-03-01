@@ -1,0 +1,12 @@
+.transaction-active {
+    color: #000 !important;
+}
+
+
+/*.transaction-table-display {
+    display: block !important;
+}*/
+
+.transaction-table-hide {
+    display: none !important;
+}
