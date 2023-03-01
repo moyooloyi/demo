@@ -28738,8 +28738,12 @@ dl li {
         -webkit-transition: all 0.25s ease-out;
         transition: all 0.25s ease-out;
     }
-    .sidebar-offcanvas.active {
-        right: 0;
+   .sidebar-offcanvas.active {
+        left: 0;
+    }
+    .navbar .navbar-menu-wrapper .navbar-nav {
+        position: absolute;
+        right: 10px;
     }
     .sidebar-brand-wrapper {
         width: 75px;
