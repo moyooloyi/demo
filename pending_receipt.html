@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Reyts</title>
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body class="dark-theme">
+    <div class="container-scroller">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <ul class="nav">
+                <a href="index.html" class="nav-link">
+                    <div>
+                        <img class="logoimg" src="images/logoWhite.png">
+                    </div>
+                </a>
+
+                <a class="nav-link" id="exchange" href="">
+                    <button type="button" class="btn btn-inverse-light btn-fw inverse"> <span id="cache"><i class="mdi mdi-cached menu-icon"></i></span> Make an exchange </button>
+                </a>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="mdi mdi-home menu-icon"></i>
+                        <span class="menu-title">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="transaction.html">
+                        <i class="mdi mdi-deskphone menu-icon"></i>
+                        <span class="menu-title">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="" aria-expanded="false" aria-controls="icons">
+                        <i class="mdi mdi-image-filter-vintage menu-icon"></i>
+                        <span class="menu-title">Settings</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <!-- <div class="collapse" id="icons">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Material</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Flag icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Font Awesome</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Simple line icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Themify icons</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <i class="mdi mdi-wallet-giftcard menu-icon"></i>
+                        <span class="menu-title">Invite</span>
+                    </a>
+                </li>
+
+                <li class="nav-item logout">
+                    <a class="nav-link" href="">
+                        <i class="mdi mdi-logout menu-icon"></i>
+                        <span class="menu-title">Log out</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_navbar.html -->
+            <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+                    <button class="navbar-toggler navbar-toggler align-items-center" type="button" data-toggle="minimize">
+              <i class="mdi mdi-menu"></i>
+            </button>
+                    <ul class="navbar-nav navbar-nav-right ml-lg-auto">
+                        <li class="nav-item nav-search border-0 mr-1 mr-md-3 mr-lg-5 d-none d-md-flex">
+                            <form class="nav-link form-inline mt-2 mt-md-0">
+                                <div class="input-group">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                    <i class="mdi mdi-magnify"></i>
+                                  </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search" />
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item nav-search border-0 mr-1 mr-md-3 mr-lg-5 d-none d-md-flex">
+
+                        </li>
+                        <li class="nav-item dropdown dropleft">
+                            <a class="nav_notification" href="#">
+                                <i class="mdi mdi-bell-outline"></i>
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav_notification" href="#">
+                                <i class="mdi mdi-account-circle"></i>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-menu"></span>
+            </button>
+                </div>
+            </nav>
+            <!-- partial:partials/_sidebar.html -->
+
+            <div class="main-panel">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="receipt_head">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="receipt_body">
+                                            <h2>RECEIPT</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="receipt_date">
+                                            <p><span>Date:</span> 1st March,2023</p>
+                                            <p><span>Time:</span> 12:00AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <div class="checkbox_receipt">
+                                        <div class="tick pending"><i class="mdi mdi-alarm"></i></div>
+                                        <h5 class="pending">Transaction pending and waiting to be matched</h5>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Reference ID:</td>
+                                                <td class="space"></td>
+                                                <td class="id">1234567</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Amount</td>
+                                                <td class="space"></td>
+                                                <td class="id">1,000 CAD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Service charge</td>
+                                                <td class="space"></td>
+                                                <td class="id">6 CAD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Amount you will exchange</td>
+                                                <td class="space"></td>
+                                                <td class="id">994 CAD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Exchange Rate Selected</td>
+                                                <td class="space"></td>
+                                                <td class="id">305 NGN</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="total_amount pending">
+                                                <h5>Amount sent to your account</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="price">
+                                                <p class="pending">303.170 NGN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="download">
+                                        <a href="#">
+                                            <p>Download Receipt</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="js/vendor.bundle.base.js"></script>
+        <script src="js/off-canvas.js"></script>
+        <script src="js/dashboard.js"></script>
+</body>
+
+</html>
